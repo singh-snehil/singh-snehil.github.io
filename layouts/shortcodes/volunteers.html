@@ -1,0 +1,11 @@
+
+    <section id="volunteers" class="bg-light">
+    <div class="container">
+      <h3 class="section-head text-center">Volunteers</h3>
+     <div class="d-flex flex-column flex-sm-row flex-sm-wrap">
+        {{ range .Site.Data.volunteers }}
+            <a href={{ .url }} class="volunteer bg-light">{{ .name }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </section>

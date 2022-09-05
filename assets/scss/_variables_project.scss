@@ -1,0 +1,27 @@
+/*
+Add styles or override the theme's variables here.
+*/
+
+html.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+// Theme colors
+$primary: #0aa8a7;
+$secondary: #fff;
+$dark: #066464;
+$info: #adb5bd;
+$light: #edf6f5;
+$text: #36454F;
+$orange: orange;
+$lightgray: #f1f1f1;
+
+// Nav bar colors
+$white: #fff;
+$navbar-dark-color: rgba($white, 1);
+$navbar-dark-hover-color: rgba($white, 0.75);
+$navbar-dark-active-color: $navbar-dark-color;
+
+// Fonts
+$google_font_family: "Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap" !default;
+

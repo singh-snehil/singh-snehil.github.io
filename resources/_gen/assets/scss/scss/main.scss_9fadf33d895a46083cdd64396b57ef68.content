@@ -20920,7 +20920,8 @@ a.bg-light:hover {
   border: 1px solid #066464;
   border-right: 0;
   border-left: 0;
-  border-radius: 0; }
+  border-radius: 0;
+  max-width: 100%; }
   .accordion > .card:first-child, .td-content .accordion > .highlight:first-child {
     border-top: 0; }
   .accordion > .card > .card-header, .td-content .accordion > .highlight > .card-header {
