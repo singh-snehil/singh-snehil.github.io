@@ -21,8 +21,8 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Build
-        run: hugo --minify
+      - name: Pre-Build
+        run: npm install -D autoprefixer postcss-cli postcss
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
