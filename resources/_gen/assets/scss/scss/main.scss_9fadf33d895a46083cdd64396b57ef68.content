@@ -20775,14 +20775,10 @@ p {
 #overview, #community {
   background-color: #f1f1f1;
   color: #36454F;
-  padding: 6em 1.5em 6em 1.5em;
   margin: 0; }
 
 #overview p, #community p {
   font-size: 1em; }
-
-.governance-section {
-  padding: 0 6em; }
 
 #objective ~ ol li {
   font-weight: 600; }
@@ -20798,13 +20794,13 @@ hr {
   opacity: 0.25;
   color: #000; }
 
-.lead {
+#lead {
   color: orange;
   font-weight: 500;
   padding-top: 0 !important; }
 
-#lead {
-  padding-bottom: 4rem; }
+.pt-6 {
+  padding-top: 6em !important; }
 
 #partners, #volunteers {
   text-align: center; }
@@ -20836,6 +20832,8 @@ a.bg-light:hover {
     font-size: 1em; } }
 
 @media screen and (min-width: 769px) {
+  #overview, #community {
+    padding: 6em 1.5em 6em 1.5em; }
   #stakeholders .lead {
     margin-top: 1em;
     display: -ms-flexbox;
@@ -20893,7 +20891,17 @@ a.bg-light:hover {
   width: 7.5em;
   height: auto; }
 
-@media screen and (min-width: 769px) {
+@media screen and (max-width: 767px) {
+  #stakeholders .card-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #stakeholders .card-group .card, #stakeholders .card-group .td-content .highlight, .td-content #stakeholders .card-group .highlight {
+      flex-basis: 25rem; }
+  #benefits .card, #benefits .td-content .highlight, .td-content #benefits .highlight, #stakeholders .card, #stakeholders .td-content .highlight, .td-content #stakeholders .highlight {
+    max-width: 100%; } }
+
+@media screen and (min-width: 768px) {
   #benefits .card + .card, #benefits .td-content .highlight + .card, .td-content #benefits .highlight + .card, #benefits .td-content .card + .highlight, .td-content #benefits .card + .highlight, #benefits .td-content .highlight + .highlight, .td-content #benefits .highlight + .highlight, #stakeholders .card + .card, #stakeholders .td-content .highlight + .card, .td-content #stakeholders .highlight + .card, #stakeholders .td-content .card + .highlight, .td-content #stakeholders .card + .highlight, #stakeholders .td-content .highlight + .highlight, .td-content #stakeholders .highlight + .highlight {
     margin-left: 1em; } }
 

@@ -276,14 +276,10 @@ p {
 #overview, #community {
   background-color: $lightgray;
   color: $text;
-  padding: 6em 1.5em 6em 1.5em;
-  margin: 0; }
+  margin: 0; 
+}
   #overview p, #community p {
     font-size: 1em;
-  }
-
-  .governance-section {
-    padding: 0 6em;
   }
 
   #objective ~ ol li {
@@ -304,14 +300,14 @@ hr {
   color: #000;
 }
 
-.lead {
+#lead {
   color: $orange;
   font-weight: 500;
   padding-top: 0 !important;
 }
 
-#lead {
-  padding-bottom: 4rem;
+.pt-6 {
+  padding-top: 6em !important;
 }
 
 #partners, #volunteers {
@@ -344,6 +340,9 @@ a.bg-light:hover {
     font-size: 1em; } }
 
 @media screen and (min-width: 769px) {
+  #overview, #community {
+    padding: 6em 1.5em 6em 1.5em;
+  }
   #stakeholders .lead {
     margin-top: 1em;
     display: -ms-flexbox;
@@ -409,7 +408,23 @@ a.bg-light:hover {
   height: auto;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (max-width: 767px) {
+  #stakeholders .card-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .card {
+      flex-basis: 25rem;
+    }
+  }
+
+  #benefits .card, #stakeholders .card {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
   #benefits .card+.card,#stakeholders .card+.card {
     margin-left: 1em;
   }
