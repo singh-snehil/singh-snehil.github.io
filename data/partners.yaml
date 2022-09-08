@@ -1,0 +1,95 @@
+---
+'0':
+  name: Hospitals
+  items:
+  - url: /images/partners/hospitals/medanta.png
+    alt: medanta hospital logo
+  - url: /images/partners/hospitals/manipal.png
+    alt: manipal hospital logo
+  - url: /images/partners/hospitals/apollo.png
+    alt: apollo hospital logo
+  - url: /images/partners/hospitals/columbia_asia.png
+    alt: columbia asia hospital logo
+  - url: /images/partners/hospitals/gnrc.png
+    alt: gnrc hospital logo
+  - url: /images/partners/hospitals/hinduja.png
+    alt: hinduja hospital logo
+  - url: /images/partners/hospitals/ujala-cygnus.png
+    alt: ujala cygnus hospital logo
+'1':
+  name: Insurers
+  items:
+  - url: /images/partners/insurers/acko.png
+    alt: acko insurance logo
+  - url: /images/partners/insurers/aditya-birla.png
+    alt: aditya birla insurance logo
+  - url: /images/partners/insurers/bajaj_allianz.png
+    alt: bajaj allianz insurance logo
+  - url: /images/partners/insurers/care.png
+    alt: care insurance logo
+  - url: /images/partners/insurers/ergo.png
+    alt: hdfc ergo insurance logo
+  - url: /images/partners/insurers/icici-lombard.png
+    alt: icici-lombard insurance logo
+  - url: /images/partners/insurers/navi.png
+    alt: navi insurance logo
+  - url: /images/partners/insurers/tata-aig.png
+    alt: tata aig insurance logo
+  - url: /images/partners/insurers/uplift-mutuals.png
+    alt: uplift mutuals insurance logo
+  - url: /images/partners/insurers/star-health.png
+    alt: star health insurance logo
+  - url: /images/partners/insurers/max-bupa.png
+    alt: max bupa insurance logo
+  - url: /images/partners/insurers/manipal-cigna.png
+    alt: manipal cigna insurance logo
+'2':
+  name: HMIS/Claims Platforms/InsureTech
+  items:
+  - url: /images/partners/insuretech/caresoft.png
+    alt: caresoft logo
+  - url: /images/partners/insuretech/eoxegen.png
+    alt: eoxegen logo
+  - url: /images/partners/insuretech/ict-health.png
+    alt: ict health logo
+  - url: /images/partners/insuretech/ihx.png
+    alt: ihx logo
+  - url: /images/partners/insuretech/uttam.png
+    alt: uttam logo
+  - url: /images/partners/insuretech/srishti-software.png
+    alt: srishti software logo
+  - url: /images/partners/insuretech/vitraya.png
+    alt: vitraya logo
+  - url: /images/partners/insuretech/policy_bazaar.png
+    alt: policy bazaar logo
+'3':
+  name: TPAs
+  items:
+  - url: /images/partners/tpa/fhpl.png
+    alt: fhpl logo
+  - url: /images/partners/tpa/medi-assist.png
+    alt: medi-assist logo
+'4':
+  name: Think Tanks
+  items:
+  - url: /images/partners/thinktanks/access-international.png
+    alt: access international logo
+  - url: /images/partners/thinktanks/bcg.png
+    alt: bcg logo
+  - url: /images/partners/thinktanks/ispirt.png
+    alt: ispirt logo
+  - url: /images/partners/thinktanks/swasth.png
+    alt: swasth logo
+'5':
+  name: Associations
+  items:
+  - url: /images/partners/associations/caho.png
+    alt: C A H O logo
+  - url: /images/partners/associations/ficci.png
+    alt: ficci logo
+'6':
+  name: Community Health
+  items:
+  - url: /images/partners/community/healing-fields.png
+    alt: healing fields logo
+

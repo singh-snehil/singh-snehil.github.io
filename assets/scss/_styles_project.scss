@@ -310,15 +310,8 @@ hr {
   padding-top: 6em !important;
 }
 
-#partners, #volunteers {
+#partners {
   text-align:center;
-}
-
-a.bg-light:hover {
-  color: $primary;
-  background-color: $light !important;
-  z-index: 1;
-  text-decoration: none;
 }
 
 #stakeholders .lead {
@@ -375,7 +368,7 @@ a.bg-light:hover {
       -ms-flex-order: 1;
           order: 1; } }
 
-#benefits {
+#benefits, #volunteers {
   background-color: $lightgray;
 }
 
@@ -435,16 +428,47 @@ a.bg-light:hover {
   top: 100px;
 }
 
+.wrapper {
+  gap: 0.5em;
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    row-gap: 1em;
+    column-gap: 0;
+}
+}
+
+@media (min-width: 900px) {
+  .wrapper {
+    row-gap: 1em;
+    column-gap: 0.25em;
+}
+}
+
 .volunteer {
-  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.5em;
+  background-color: $secondary;
+  padding: 0.5em 1em;
+}
+
+.volunteer-title {
     border: none;
     color: $text;
     font-weight: 600;
     padding: 0.75rem 1.25rem;
 }
 
+.volunteer-title:hover {
+  color: $primary;
+  z-index: 1;
+  text-decoration: none;
+}
+
 @media (min-width: 600px) {
   .volunteer {
+    text-align: center;
     width: 50%;
   };
 }
@@ -453,6 +477,23 @@ a.bg-light:hover {
   .volunteer {
     width: 33%;
   };
+}
+
+.volunteer-badge{
+    width: 4rem;
+    height: 4rem;
+    color: $primary;
+    display: inline-block;
+    padding: 0.25em 0;
+    font-size: 175%;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 50%;
+    border: 2px solid $primary;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .accordion {

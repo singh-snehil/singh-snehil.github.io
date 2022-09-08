@@ -20802,14 +20802,8 @@ hr {
 .pt-6 {
   padding-top: 6em !important; }
 
-#partners, #volunteers {
+#partners {
   text-align: center; }
-
-a.bg-light:hover {
-  color: #0aa8a7;
-  background-color: #edf6f5 !important;
-  z-index: 1;
-  text-decoration: none; }
 
 #stakeholders .lead {
   margin: 0 1.5em 3em 1.5em; }
@@ -20866,7 +20860,7 @@ a.bg-light:hover {
     -ms-flex-order: 1;
     order: 1; } }
 
-#benefits {
+#benefits, #volunteers {
   background-color: #f1f1f1; }
 
 #benefits .card, #benefits .td-content .highlight, .td-content #benefits .highlight {
@@ -20909,20 +20903,60 @@ a.bg-light:hover {
   position: relative;
   top: 100px; }
 
+.wrapper {
+  gap: 0.5em; }
+
+@media (min-width: 600px) {
+  .wrapper {
+    row-gap: 1em;
+    column-gap: 0; } }
+
+@media (min-width: 900px) {
+  .wrapper {
+    row-gap: 1em;
+    column-gap: 0.25em; } }
+
 .volunteer {
-  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.5em;
+  background-color: #fff;
+  padding: 0.5em 1em; }
+
+.volunteer-title {
   border: none;
   color: #36454F;
   font-weight: 600;
   padding: 0.75rem 1.25rem; }
 
+.volunteer-title:hover {
+  color: #0aa8a7;
+  z-index: 1;
+  text-decoration: none; }
+
 @media (min-width: 600px) {
   .volunteer {
+    text-align: center;
     width: 50%; } }
 
 @media (min-width: 900px) {
   .volunteer {
     width: 33%; } }
+
+.volunteer-badge {
+  width: 4rem;
+  height: 4rem;
+  color: #0aa8a7;
+  display: inline-block;
+  padding: 0.25em 0;
+  font-size: 175%;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 50%;
+  border: 2px solid #0aa8a7;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
 
 .accordion > .card, .td-content .accordion > .highlight {
   border: 1px solid #066464;

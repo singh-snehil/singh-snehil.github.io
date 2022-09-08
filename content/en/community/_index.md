@@ -8,5 +8,5 @@ description = ''
 
 {{< partners >}}
 
-{{< volunteers >}}
+{{< volunteers 1 >}}
 
