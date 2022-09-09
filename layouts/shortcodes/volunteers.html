@@ -1,13 +1,13 @@
 
-  <section id="volunteers" class="bg-light">
+  <section id="volunteers">
     <div class="container">
       <h3 class="section-head text-center">Volunteers</h3>
       <h4 class="section-subhead">Phase {{ .Get 0 }}</h4>
       <div class="wrapper d-flex flex-column flex-md-row flex-md-wrap">
           {{ range .Site.Data.volunteers }}
-            <div class="volunteer d-flex align-items-center shadow-sm">
+            <div class="volunteer d-flex align-items-center shadow-sm position-relative">
               <span class="volunteer-badge flex-shrink-0" style="background: #f1f1f1 url('{{ .imageUrl }}') no-repeat center; background-size: cover;" data-name="{{ .name }}" data-image="{{ .imageUrl }}"></span>
-              <a href="{{ .linkedinUrl }}" target="_blank"  class="volunteer-title flex-grow-1">{{ .name }} ({{ .org }})</a>
+              <a href="{{ .linkedinUrl }}" target="_blank"  class="volunteer-title flex-grow-1 stretched-link">{{ .name }} ({{ .org }})</a>
             </div>
           {{ end }}
         </div>
