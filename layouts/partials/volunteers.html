@@ -1,0 +1,29 @@
+{{ $sortedByPhase := sort .Site.Data.volunteers "phase" "desc" }}
+<section id="volunteers">
+    <div class="container">
+      <h3 class="section-head text-center">Volunteers</h3>
+      <div class="wrapper d-flex flex-column flex-md-row flex-md-wrap">
+          {{ if .Params.currentPhase }}
+            {{ range first 1 $sortedByPhase }}
+              {{ partial "volunteer-tile.html" . }}
+            {{ end }}
+          {{ else }}
+            {{ range $sortedByPhase }}
+              {{ partial "volunteer-tile.html" . }}
+            {{ end }}
+          {{ end }}
+        </div>
+    </div>
+</section>
+
+<script>
+  let badges = document.querySelectorAll('.volunteer-badge');
+
+badges?.forEach(badge => {
+  if(badge.dataset?.image.length === 0) {
+      let initials = badge.dataset.name?.split(' ')?.map(str => {if(str !== 'Dr.') {return str[0]}})
+      .join('');
+      badge.textContent = initials;
+  }
+});
+</script>

@@ -20734,7 +20734,7 @@ p {
   font-size: 1em;
   color: orange;
   font-weight: bold;
-  padding: 0 0 2em 0;
+  padding: 2em 0;
   text-align: center;
   margin: 0; }
 

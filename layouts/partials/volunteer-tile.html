@@ -1,0 +1,7 @@
+  <h4 class="section-subhead w-100">Phase {{ .phase }}</h4>
+  {{ range .volunteers }}
+    <div class="volunteer d-flex align-items-center shadow-sm position-relative">
+    <span class="volunteer-badge flex-shrink-0" style="background: #f1f1f1 url('{{ .imageUrl }}') no-repeat center; background-size: cover;" data-name="{{ .name }}" data-image="{{ .imageUrl }}"></span>
+    <a href="{{ .linkedinUrl }}" target="_blank"  class="volunteer-title flex-grow-1 stretched-link">{{ .name }} ({{ .org }})</a>
+  </div>
+  {{ end }}
