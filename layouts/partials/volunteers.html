@@ -1,8 +1,8 @@
 {{ $sortedByPhase := sort .Site.Data.volunteers "phase" "desc" }}
-<section id="volunteers">
-    <div class="container">
-      <h3 class="section-head text-center">Volunteers</h3>
-      <div class="wrapper d-flex flex-column flex-md-row flex-md-wrap">
+<section id="volunteers" class="row">
+    <div class="col">
+      <h3 class="section-head">Volunteers</h3>
+      <div class="mb-4">
           {{ if .Params.currentPhase }}
             {{ range first 1 $sortedByPhase }}
               {{ partial "volunteer-tile.html" . }}

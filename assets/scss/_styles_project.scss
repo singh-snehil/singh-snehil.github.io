@@ -17,6 +17,8 @@ footer {
 // --------------------------------------------------
 .td-navbar {
   min-height: auto;
+  padding: 0.5rem 1rem;
+  
 
   .navbar-brand {
     margin: 0;
@@ -28,14 +30,12 @@ footer {
 
     .navbar-logo {
       svg {
-        display: inline-block;
-        position: absolute;
-        top: 0;
         z-index: 33;
         padding: 10px;
         height: 4rem;
+        width: 6rem;  
 
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(sm) {
           width: 80px;
           height: auto;
           padding: 6px;
@@ -138,55 +138,132 @@ nav.foldable-nav .ul-1 .with-child>input:checked~label:hover:before {
 }
 
 body {
-  color: $text;
-  background-color: $secondary;
+  color: $text-secondary;
+  background-color: $lightgray;
 }
 
-.-bg-white {
-  color: $text;
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  background-image: none;
+
+  @include media-breakpoint-up(lg) {
+    border-radius: 1.5rem;
+    padding: 0.5rem 2rem;
+  }
+}
+
+
+
+.goal-wrapper {
+  position: relative;
+  top: -2rem;
+  background-color: $secondary;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
+  padding: 1rem;
+  margin: 0 1rem;
+}
+
+#goal {
+  padding: 0 1rem;
+
+  @include media-breakpoint-up(md) {
+      padding: 0 2rem;
+  
+    .goal-wrapper {
+      top: -2.5rem;
+      padding: 1.5rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    padding: 0 5rem;
+  }
 }
 
 p {
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 1em;
 }
 
-.navbar-dark.td-navbar-cover .navbar-nav .nav-link {
-  color: $text;
+.td-navbar .navbar-nav .nav-link {
+  color: $secondary;
   text-shadow: none;
 
   &:hover, &:focus {
-    color: $primary;
-  }
-}
-
-.navbar-dark.td-navbar-cover.navbar-bg-onscroll .navbar-nav .nav-link {
-  &:hover, &:focus {
-    color: $secondary;
-  }
-}
-
-.display-1 {
-  color: $text;
-  padding-bottom: 0 !important;
-}
-
-.btn-primary {
-  border: 2px solid $secondary;
-
-  &:hover, &:focus {
-    background-color: #09908f;
-    border-color: #09908f;
-    outline: 0;
+    text-shadow: $lightgray;
   }
 }
 
 
-.td-overlay--dark::after {
-  background-color: white;
+// div.container-fluid.td-default {
+//   padding-left: 0;
+//   padding-right: 0;
+// }
+
+#hero {
+  background-color: $primary;
+  color: $secondary;
+
+  .btn {
+    width: 9rem;
+
+    @include media-breakpoint-down(lg) {
+      padding: 0.25rem 0.5rem;
+      border-radius: 1.25rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 12rem;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .btn+.btn {
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.3;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 3rem;
+  }
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.5rem;
+  }
 }
 
 .text-info {
   color: $primary;
+}
+
+.cta {
+  background-color: $cta;
+
+  &:hover {
+    background-color: $cta-dark;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+  }
 }
 
 // Front page styling
@@ -194,65 +271,55 @@ p {
   object-fit: scale-down;
 }
 
-.text-white {
-  font-weight: 400;
-}
+.td-default main section {
+  padding: 2rem 1rem ;
 
-.bg-primary-dark {
-  background-color: $dark;
-
-  a {
-    border-bottom: 1px dotted paleturquoise;
-    
-    color: paleturquoise !important;
-    font-weight: 600;
-    padding: 0 2px 1px 2px;
-    text-decoration: none;
-    
-    &:hover {
-      border-bottom: 1px dotted #fff;
-
-      color: #fff !important;
-    }
+  @include media-breakpoint-up(md) {
+      padding: 2rem 2rem;
   }
-}
 
-.border-primary-dark {
-  border-color: $info !important;
+  @include media-breakpoint-up(lg) {
+    padding: 2rem 5rem;
+}
 }
 
 .section-head {
-  font-size: 2em;
-  color: $primary;
+  font-size: 1.75em;
+  color: $text-primary;
   font-weight: bold;
-  padding: 0 0 1em 0;
-  margin: 0;
+  text-align: center;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 2.25em;
+  }
 }
 
 .hero {
-  font-size: 3em;
+  font-size: 2.5em;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 3em;
+  }
 }
 
 .section-subhead {
+  display: inline-block;
   font-size: 1em;
-  color: $orange;
+  color: $primary;
   font-weight: bold;
-  padding: 2em 0;
-  text-align: center;
+  padding: 2em 0 0.5em;
   margin: 0;
+  border-bottom: 0.25em solid $primary;
 }
 
 .impText {
-  color: $orange;
-}
-
-.card-title {
-  font-size: 1.125em;
+  color: $primary;
 }
 
 .contain {
   margin: 0 auto;
-  max-width: 1200px; }
+  max-width: 1200px; 
+}
 
 .image {
   display: block; }
@@ -273,15 +340,6 @@ p {
     float: right;
     margin: 0 0 1.5em 1.5em; }
 
-#overview, #community {
-  background-color: $lightgray;
-  color: $text;
-  margin: 0; 
-}
-  #overview p, #community p {
-    font-size: 1em;
-  }
-
   #objective ~ ol li {
     font-weight: 600;
   }
@@ -289,7 +347,7 @@ p {
 
 hr {
   height: 2px;
-  background-color: $dark;
+  background-color: $primary-dark;
   border: none;
 }
 
@@ -301,7 +359,7 @@ hr {
 }
 
 #lead {
-  color: $orange;
+  color: $secondary;
   font-weight: 500;
   padding-top: 0 !important;
 }
@@ -310,116 +368,54 @@ hr {
   padding-top: 6em !important;
 }
 
-#partners {
-  text-align:center;
-}
-
-#stakeholders .lead {
-  margin: 0 1.5em 3em 1.5em;}
-  #stakeholders .lead > .image {
-    padding: 0 1.5em;
-    max-width: 60%;
-    margin-bottom: 1.5em; }
-  #stakeholders .lead > .text p {
-    font-size: 1em; }
-
-@media screen and (min-width: 480px) {
-  #overview, #community {
-    font-size: 1em; }
-  #stakeholders .lead > .image {
-    max-width: 35%;
-    margin-bottom: 3em; }
-  #stakeholders .lead > .text p {
-    font-size: 1em; } }
-
-@media screen and (min-width: 769px) {
-  #overview, #community {
-    padding: 6em 1.5em 6em 1.5em;
-  }
-  #stakeholders .lead {
-    margin-top: 1em;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: stretch;
-        align-items: stretch; }
-    #stakeholders .lead > * {
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto; }
-    #stakeholders .lead > .image {
-      display: block;
-      margin: 0 auto;
-      max-width: 100%; }
-      #stakeholders .lead > .image > img {
-        max-width: 80%;
-        margin: 0 auto; }
-    #stakeholders .lead > .text {
-      -ms-flex-preferred-size: 70%;
-          flex-basis: 70%; }
-    #stakeholders .lead:nth-child(2n+0) > .image {
-      -ms-flex-order: 2;
-          order: 2; }
-    #stakeholders .lead:nth-child(2n+0) > .text {
-      -ms-flex-order: 1;
-          order: 1; } }
-
-#benefits, #volunteers {
-  background-color: $lightgray;
-}
-
-#benefits {
+#stakeholders, #benefits {
   .card {
-    flex-direction: row;
     align-items: center;
     border-radius: 1em;
-    margin: 1em 0 1em 0;
+    flex: 0 0 49%;
+    border: none;
   }
 
-  i {
-    color: $primary;
-    width: 2rem;
-    text-align: center;
+  .card-title {
+    color: $text-primary;
+    font-weight: 700;
+    font-size: 1.25em;
   }
 
   .card-text {
-    color: $text;
-    font-weight: 700;
+    color: $text-secondary;
+    font-weight: 400;
+    font-size: 1em;
   }
+
+  @include media-breakpoint-up(md) {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+#benefits .card {
+    height: 6.25rem;;
 }
 
 #partner-group {
-  gap: 3em;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  gap: 2em;
 }
 
 .partner-img-wrapper {
-  width: 7.5em;
+  width: 8em;
   height: auto;
+
+  @include media-breakpoint-up(md) {
+    width: 9em;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  #stakeholders .card-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .card {
-      flex-basis: 25rem;
-    }
-  }
-
   #benefits .card, #stakeholders .card {
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #benefits .card+.card,#stakeholders .card+.card {
-    margin-left: 1em;
   }
 }
 
@@ -447,61 +443,76 @@ hr {
 }
 
 .volunteer {
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  width: 45%;
+  border: none;
   border-radius: 0.5em;
-  background-color: $secondary;
-  padding: 0.5em 1em;
+  background-color: transparent;
+  font-size: 0.75rem;
+
+  // &:hover {
+  //   box-shadow: inset 0 0 0 1000px $primary-rgba !important;
+  // }
+
+  @include media-breakpoint-up(md) {
+    width: 33%;
+    font-size: 1rem;
+
+    .org {
+      font-size: 0.85rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    text-align: left;
+    width: 24%;
+  }
 }
 
-.volunteer:hover {
-  box-shadow: inset 0 0 0 1000px $primary-rgba !important;
+.volunteer-badge {
+  width: 2.25rem;
+  height: 2.25rem;
+  color: $primary;
+  display: inline-block;
+  padding: 0.25em 0.25em;
+  font-size: 150%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  border-radius: 50%;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  @include media-breakpoint-up(md) {
+    width: 3rem;
+      height: 2.5rem;
+      line-height: 1;
+  }
+
+  @include media-breakpoint-up(lg) {
+    line-height: 1.25;
+  }
 }
 
 .volunteer-title {
     border: none;
-    color: $text;
-    font-weight: 600;
-    padding: 0.75rem 1.25rem;
+    color: $text-primary;
+    font-weight: 400; 
+    transition: color 0.2s ease-in, font-weight 0.2s ease-in;
+
+    &:hover {
+      color: $primary;
+      font-weight: bold;
+      z-index: 1;
+      text-decoration: none;
+    }
 }
 
-.volunteer-title:hover {
+.org:hover {
   color: $primary;
-  z-index: 1;
-  text-decoration: none;
-}
-
-@media (min-width: 600px) {
-  .volunteer {
-    text-align: center;
-    width: 50%;
-  };
-}
-
-@media (min-width: 900px) {
-  .volunteer {
-    text-align: left;
-    width: 33%;
-  };
-}
-
-.volunteer-badge {
-    width: 4rem;
-    height: 4rem;
-    color: $primary;
-    display: inline-block;
-    padding: 0.25em 0;
-    font-size: 175%;
-    font-weight: 700;
-    line-height: 1.5;
-    text-align: center;
-    border-radius: 50%;
-    border: 2px solid $primary;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .accordion {
   > .card {
-      border: 1px solid $dark;
+      border: 1px solid $primary-dark;
       border-right: 0;
       border-left: 0;
       border-radius: 0;
@@ -533,7 +544,7 @@ hr {
   padding: 1.25rem 1.5rem;
   font-size: 1.25rem;
   font-weight: 700;
-  color: $text;
+  color: $text-primary;
   text-align: left;
   background-color: $secondary;
   border: 0;

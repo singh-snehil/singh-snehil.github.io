@@ -7,22 +7,25 @@ html.smooth-scroll {
 }
 
 // Theme colors
-$primary: #0aa8a7;
-$primary-rgba: rgba(10,168,167, 0.2);
+$primary:  #673AB7;
+$primary-rgba: rgba(103, 58, 183, 0.2);
+$primary-dark: #491c99;
 $secondary: #fff;
-$dark: #066464;
+$cta: #ffc107;
+$cta-dark: #ffac07;
+
 $info: #adb5bd;
 $light: #edf6f5;
-$text: #36454F;
+$text-primary: rgba(0, 0, 0, 0.87);
+$text-secondary: rgba(0, 0, 0, 0.6);
 $orange: orange;
-$lightgray: #f1f1f1;
+$lightgray: #DDDDDD;;
 
 // Nav bar colors
 $white: #fff;
-$navbar-dark-color: rgba($white, 1);
-$navbar-dark-hover-color: rgba($white, 0.75);
-$navbar-dark-active-color: $navbar-dark-color;
+// 
 
 // Fonts
-$google_font_family: "Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap" !default;
+$google_font_name: "Nunito";
+$google_font_family: "Nunito:300,300i,400,400i,700,700i&display=swap" !default;
 

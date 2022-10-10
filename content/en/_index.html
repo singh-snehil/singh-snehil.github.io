@@ -3,196 +3,177 @@ title = "HCX"
 currentPhase = true
 +++
 
-<!-- Hero section -->
-{{<blocks/cover title="Health Claims Exchange Specifications" image_anchor="center" color="secondary">}}
-<div class="mx-auto">
-  <p id='lead' class="lead pb-md-5 mb-5">Open-source, widely agreed and served as a public good</p>
-  <a
-    class="btn btn-lg btn-primary mr-md-3 mb-4"
-    href="https://docs.hcxprotocol.io/"
-    target="_blank"
-  >
-    Read Docs <i class="fas fa-book ml-2"></i>
-  </a>
-  <a
-    class="btn btn-lg btn-outline-primary mr-md-3 mb-4"
-    href="https://docs.hcxprotocol.io/how-to-submit-responses"
-    target="_blank"
-  >
-    Contribute <i class="fas fa-pencil-alt ml-2"></i>
-  </a>
-  <div class="mx-auto mt-md-5">
-    {{<blocks/link-down color="dark">}}
-  </div>
-</div>
-{{</blocks/cover>}}
-
-<section id="overview" class="pt-md-6">
-  <div class="container">
-    <div class="row align-items-center text-center text-md-left">
-      <div class="col-md-5">
-        <h2 class="section-head hero text-center">Our Goal</h2>
-      </div>
-      <div class="col-md-7">
-        <p>
-          To create an open, widely agreed Health Claims Exchange Specifications as a public good which 
-          can be adopted. Specifications in this context refer to the blueprint of each aspect of the 
-          envisioned claims network and are fundamental to the workings of the network. They have been 
-          carefully desgined to be open to support technology and vendor neutrality, evolvable over a 
-          period of time thereby helping adapt to changing needs, enbale and not restrict innovation or
-          inclusion. These Health Claims Exchange Specifications for Cashless Insurance are now being 
-          published for public consultation and we seek your feedback for the same.
-        </p>
+<section id="hero" class="row align-items-center">
+    <div class="col-md-7">
+      <h1 class="title">Health Claims Exchange Specifications</h1>
+      <h2 class="subtitle">Open-source, widely-agreed and served as a public good</h2>
+      <div class="row justify-content-around justify-content-lg-start mt-4 px-3">
+        <a 
+          class="btn cta"
+          href="https://docs.hcxprotocol.io/"
+          target="_blank" 
+        >Contribute</a>
+        <a 
+          class="btn btn-outline-secondary"
+          href="https://docs.hcxprotocol.io/how-to-submit-responses"
+          target="_blank"
+        >Documentation</a>
       </div>
     </div>
+    <div class="col-md-5 my-4 my-md-0">
+      <img src="/images/banner.svg" alt="banner image" class="w-100" />
+    </div>
+</section>
+<section id="goal" class="row align-items-center text-center text-lg-left">
+  <div class="goal-wrapper row align-items-center">
+    <div class="col-lg-7 my-2 my-lg-0">
+      <h2 class="section-head hero text-center">Our Goal</h2>
+      <p>
+        To create an open, widely agreed Health Claims Exchange Specifications as a public good which 
+        can be adopted. Specifications in this context refer to the blueprint of each aspect of the 
+        envisioned claims network and are fundamental to the workings of the network. They have been 
+        carefully desgined to be open to support technology and vendor neutrality, evolvable over a 
+        period of time thereby helping adapt to changing needs, enbale and not restrict innovation or
+        inclusion. These Health Claims Exchange Specifications for Cashless Insurance are now being 
+        published for public consultation and we seek your feedback for the same.
+      </p>
+    </div>
+    <div class="col-lg-5">
+      <img src="/images/banner-goal.svg" alt="main goal banner image" class="w-100" />
+    </div>
+        
   </div>
 </section>
-<section id="stakeholders">
-  <div class="container">
-      <h3 class="section-head text-center">Overview</h3>
+<section id="stakeholders" class="row text-center text-lg-left">
+  <div class="col">
+    <h2 class="section-head text-center">Overview</h3>
       <p>The <u class="impText">IRDAI-NHA Joint Working Group</u> recommended creation and adoption of a Health Claims Platform
         and standardization of e-Claims and other related documents to enable the ecosystem to move to a 
         low cost paperless regime that allows for innovation. To build this, the first step needed was the 
         creation of open claims standards.<br /><br />
         The current health insurance claims settlement process is manual, 
         non-digital and laborious in nature posing challenges at every stage:</p>
-    <div class="card-group text-center text-md-left mt-5">
-      <div class="card">
-        <img
-        height="200"
-          src="/images/patient.png"
-		      class="card-img-top"
-		      draggable="false"
-          style="padding: 2rem;"
-          alt="Patient Logo"
-        />
-        <div class="card-body bg-primary-dark">
-          <h4 class="card-title text-white section-head">Patients</h4>
-          <p class="card-text text-white">
-            Patient experience for claim processing is cumbersome; minimal communication and limited transparency on the status of their pre-authorization and long wait times.
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          height="200"
-          src="/images/regulators.png"
-		  class="card-img-top"
-		  draggable="false"
-          style="padding: 2rem;"
-          alt="Regulators Logo"
-        />
-        <div class="card-body bg-primary-dark">
-          <h4 class="card-title text-white section-head">
-            Regulators
-          </h4>
-          <p class="card-text text-white">
-            Regulators receive delayed and incomplete data; lack of coding leads to limited analytics.
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <img
-        height="200"
-          src="/images/tpa.png"
-		  class="card-img-top"
-		  draggable="false"
-          style="padding: 2rem;"
-          alt="tpa image"
-        />
-        <div class="card-body bg-primary-dark">
-          <h4 class="card-title text-white section-head">TPAs</h4>
-          <p class="card-text text-white">
-            Insurers & TPAs get uncoded data which they have to digitize themselves, relying mostly on manual adjudication and limited fraud analytics.
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <img
-        height="200"
-          src="/images/recon.png"
-      class="card-img-top"
-      draggable="false"
-          style="padding: 2rem;"
-          alt="Reconciliation Logo"
-        />
-        <div class="card-body bg-primary-dark">
-          <h4 class="card-title text-white section-head">Reconciliation</h4>
-          <p class="card-text text-white">
-            Painstaking tracking of claims and reconciliations
-          </p>
-        </div>
-      </div>
-    </div>
+        <div class="card-group justify-content-between">
+          <div class="card flex-md-row shadow-sm py-3 py-md-1 my-2">
+            <div class="col-md-5 col-lg-4 text-center">
+              <img src="/images/patients.svg" alt="patients logo"  />
+            </div>
+            <div class="col-md-7 col-lg-8 pl-md-0 align-self-stretch">
+              <div class="card-body px-2 px-md-0">
+                <h3 class="card-title">Patients</h3>
+                <p class="card-text">
+                  Patient experience for claim processing is cumbersome; minimal communication and limited transparency on the status of their pre-authorization and long wait times.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card flex-md-row shadow-sm py-3 py-md-1 my-2">
+            <div class="col-md-5 col-lg-4 text-center">
+              <img src="/images/regulators.svg" alt="regulators logo"  /> 
+            </div>
+            <div class="col-md-7 col-lg-8 pl-md-0 align-self-stretch">
+            <div class="card-body px-2 px-md-0">
+              <h3 class="card-title">Regulators</h3>
+              <p class="card-text">
+                Regulators receive delayed and incomplete data; lack of coding leads to limited analytics.              </p>
+            </div>
+            </div>
+          </div>
+          <div class="card flex-md-row shadow-sm py-3 py-md-1 my-2">
+            <div class="col-md-5 col-lg-4 text-center">
+              <img src="/images/tpa.svg" alt="TPA logo"  /> 
+            </div>
+            <div class="col-md-7 col-lg-8 pl-md-0 align-self-stretch">
+            <div class="card-body px-2 px-md-0">
+              <h3 class="card-title">TPAs</h3>
+              <p class="card-text">
+                Insurers & TPAs get uncoded data which they have to digitize themselves, relying mostly on manual adjudication and limited fraud analytics.
+              </p>
+            </div>
+            </div>
+            </div>
+            <div class="card flex-md-row shadow-sm py-3 py-md-1 my-2">
+              <div class="col-md-5 col-lg-4 text-center">
+                <img src="/images/reconciliation.svg" alt="reconciliation logo"  /> 
+              </div>
+              <div class="col-md-7 col-lg-8 pl-md-0 align-self-stretch">
+                <div class="card-body px-2 px-md-0">
+                  <h3 class="card-title">Reconciliation</h3>
+                  <p class="card-text">
+                    Painstaking tracking of claims and reconciliations
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+  </div>
 </section>
-<section id="benefits">
-  <div class="container">
-    <h3 class="section-head text-center">Health Claims Exchange Specifications<br class="d-none d-md-inline" /> For Cashless Insurance</h5>
-    <p>Inspired by the recommendations of the Joint Working Group of NHA and IRDAI (2019), these specifications have been developed over the last 12 months by 50+ volunteers from across the healthcare ecosystem (including Insurers, Hospitals, TPAs, Insurance Technology players and Think tanks), as a part of a transparent, collaborative and open effort anchored by Swasth.</p>
-    <div class="card-group">
-      <div class="card shadow-sm">
-        <div class="col col-md-2">
-          <i class="fas fa-star fa-2x"></i>
+<section id="benefits" class="row text-center text-lg-left">
+  <div class="col">
+    <h2 class="section-head text-center">Health Claims Exchange Specifications<br class="d-none d-md-inline" /> For Cashless Insurance</h5>
+      <p>Inspired by the recommendations of the Joint Working Group of NHA and IRDAI (2019), these specifications have been developed over the last 12 months by 50+ volunteers from across the healthcare ecosystem (including Insurers, Hospitals, TPAs, Insurance Technology players and Think tanks), as a part of a transparent, collaborative and open effort anchored by Swasth.</p>
+      <div class="card-group justify-content-between">
+      <div class="card flex-row shadow-sm my-2">
+        <div class="col-3 text-center">
+          <img src="/images/thumbsUp-icon.svg" alt="thumbs up logo" class="mw-100" />
         </div>
-        <div class="col-md-10" style="padding:0;">
-          <div class="card-body">
-            <p class="card-text">Improved patients’ claim related experience</p>
+        <div class="col-9 pl-md-0">
+          <div class="card-body text-left px-0">
+            <h3 class="card-title">Improved patients’ claim related experience</h3>
           </div>
         </div>
       </div>
-      <div class="card shadow-sm">
-        <div class="col col-md-2">
-          <i class="fas fa-bullseye fa-2x"></i>
+      <div class="card flex-row shadow-sm my-2">
+        <div class="col-3 text-center">
+          <img src="/images/eye-icon.svg" alt="visibility logo" class="mw-100" /> 
         </div>
-        <div class="col-md-10" style="padding:0;">
-        <div class="card-body">
-          <p class="card-text">Better visibility and tracking of claims</p>
-        </div>
-        </div>
-      </div>
-      <div class="card shadow-sm">
-        <div class="col col-md-2">
-          <i class="fas fa-rupee-sign fa-2x"></i>
-        </div>
-        <div class="col-md-10" style="padding:0;">
-        <div class="card-body">
-          <p class="card-text">Reduction in claims processing cost</p>
+        <div class="col-9 pl-md-0">
+        <div class="card-body text-left px-0">
+          <h3 class="card-title">Better visibility and tracking of claims</h3>
         </div>
         </div>
       </div>
-    </div>
-    <div class="card-group">
-      <div class="card shadow-sm">
-        <div class="col col-md-2">
-          <i class="fas fa-clock fa-2x"></i>
+      <div class="card flex-row shadow-sm my-2">
+        <div class="col-3 text-center">
+          <img src="/images/rupee-icon.svg" alt="rupee logo" class="mw-100" /> 
         </div>
-        <div class="col-md-10" style="padding:0;">
-          <div class="card-body">
-            <p class="card-text">Faster claims processing</p>
+        <div class="col-9 pl-md-0">
+        <div class="card-body text-left px-0">
+          <h3 class="card-title">Reduction in claims processing cost</h3>
+        </div>
+        </div>
+      </div>
+        <div class="card flex-row shadow-sm my-2">
+          <div class="col-3 text-center">
+            <img src="/images/timer-icon.svg" alt="timeliness logo" class="mw-100" /> 
+          </div>
+          <div class="col-9 pl-md-0">
+            <div class="card-body text-left px-0">
+              <h3 class="card-title">Faster claims processing</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card flex-row shadow-sm my-2">
+          <div class="col-3 text-center">
+            <img src="/images/innovative-icon.svg" alt="innovation logo" class="mw-100" /> 
+          </div>
+          <div class="col-9 pl-md-0">
+            <div class="card-body text-left px-0">
+              <h3 class="card-title">Newer innovative insurance products</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card flex-row shadow-sm my-2">
+          <div class="col-3 text-center">
+            <img src="/images/insights-icon.svg" alt="insights logo" class="mw-100" /> 
+          </div>
+          <div class="col-9 pl-md-0">
+            <div class="card-body text-left px-0">
+              <h3 class="card-title">Better quality data for the industry and regulators</h3>
+            </div>
           </div>
         </div>
       </div>
-      <div class="card shadow-sm">
-        <div class="col col-md-2">
-          <i class="fas fa-lightbulb fa-2x"></i>
-        </div>
-        <div class="col-md-10" style="padding:0;">
-          <div class="card-body">
-            <p class="card-text">Newer innovative insurance products</p>
-          </div>
-        </div>
-      </div>
-      <div class="card shadow-sm">
-        <div class="col col-md-2">
-          <i class="fas fa-check-circle fa-2x"></i>
-        </div>
-        <div class="col-md-10" style="padding:0;">
-          <div class="card-body">
-            <p class="card-text">Better quality data for the industry and regulators</p>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 

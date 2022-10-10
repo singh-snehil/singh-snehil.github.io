@@ -132,6 +132,8 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   [params.ui]
     # Enable the logo
     navbar_logo = true
+    #Disable navbar translucent behaviour
+    navbar_translucent_over_cover_disable = true
     # Enable to show the side bar menu in its compact state.
     sidebar_menu_compact = true
     # Enable the search box in the side bar.

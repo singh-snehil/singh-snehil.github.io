@@ -2,20 +2,20 @@
 '0':
   name: Hospitals
   items:
-  - url: /images/partners/hospitals/medanta.png
-    alt: medanta hospital logo
-  - url: /images/partners/hospitals/manipal.png
-    alt: manipal hospital logo
   - url: /images/partners/hospitals/apollo.png
     alt: apollo hospital logo
-  - url: /images/partners/hospitals/columbia_asia.png
-    alt: columbia asia hospital logo
-  - url: /images/partners/hospitals/gnrc.png
-    alt: gnrc hospital logo
+  - url: /images/partners/hospitals/medanta.png
+    alt: medanta hospital logo
   - url: /images/partners/hospitals/hinduja.png
     alt: hinduja hospital logo
   - url: /images/partners/hospitals/ujala-cygnus.png
     alt: ujala cygnus hospital logo
+  - url: /images/partners/hospitals/manipal.png
+    alt: manipal hospital logo
+  - url: /images/partners/hospitals/columbia_asia.png
+    alt: columbia asia hospital logo
+  - url: /images/partners/hospitals/gnrc.png
+    alt: gnrc hospital logo
 '1':
   name: Insurers
   items:

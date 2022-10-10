@@ -1,17 +1,17 @@
-<section id='partners'>
-    <div class="container">
+<section id='partners' class="row">
+    <div class="col">
       <h3 class="section-head">Partners</h3>
       <div class="mb-4">
         {{ range .Site.Data.partners }}
                 <h4 class="section-subhead">{{ .name }}</h4>
-                <div id="partner-group" class="px-3 mb-5 d-flex flex-wrap align-items-center justify-content-between justify-content-md-center">
+                <div id="partner-group" class="pt-4 mb-5 d-flex flex-wrap align-items-center justify-content-md-start">
                     {{ range .items }}
-                        <div class="partner-img-wrapper">
-                            <img src="{{ .url }}" class="img-fluid border-0 rounded-0 shadow-none" style="object-fit: cover; vertical-align: middle;" alt="{{ .alt }}">
+                        <div class="partner-img-wrapper text-center">
+                            <img src="{{ .url }}" class="img-fluid border-0 rounded-0 shadow-none" alt="{{ .alt }}">
                         </div>
                     {{ end }}
                 </div>
         {{ end }}
-    </div>
+        </div>
     </div>
 </section>
