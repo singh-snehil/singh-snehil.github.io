@@ -20708,7 +20708,14 @@ p {
   background-color: #673AB7;
   color: #fff; }
   #hero .btn {
-    width: 9rem; }
+    width: 7rem;
+    font-size: 0.85rem;
+    line-height: 2; }
+    @media screen and (min-width: 374px) {
+      #hero .btn {
+        width: 9rem;
+        font-size: 1rem;
+        line-height: 1.5; } }
     @media (max-width: 1199.98px) {
       #hero .btn {
         padding: 0.25rem 0.5rem;
@@ -20841,7 +20848,7 @@ hr {
 #stakeholders .card-title, #benefits .card-title {
   color: rgba(0, 0, 0, 0.87);
   font-weight: 700;
-  font-size: 1.25em; }
+  font-size: 1em; }
 
 #stakeholders .card-text, #benefits .card-text {
   color: rgba(0, 0, 0, 0.6);
@@ -20849,8 +20856,16 @@ hr {
   font-size: 1em; }
 
 @media (min-width: 768px) {
-  #stakeholders img, #benefits img {
+  #stakeholders img {
     width: 100%; } }
+
+@media (min-width: 768px) {
+  #benefits img {
+    width: 100%; } }
+
+@media (min-width: 992px) {
+  #benefits img {
+    width: 75%; } }
 
 #benefits .card, #benefits .td-content .highlight, .td-content #benefits .highlight {
   height: 6.25rem; }
@@ -20860,7 +20875,7 @@ hr {
   gap: 2em; }
 
 .partner-img-wrapper {
-  width: 8em;
+  width: 6em;
   height: auto; }
   @media (min-width: 768px) {
     .partner-img-wrapper {

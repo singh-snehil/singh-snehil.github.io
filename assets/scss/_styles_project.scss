@@ -207,7 +207,15 @@ p {
   color: $secondary;
 
   .btn {
-    width: 9rem;
+    width: 7rem;
+    font-size: 0.85rem;
+    line-height: 2;
+
+    @media screen and (min-width: 374px)  {
+      width: 9rem;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
 
     @include media-breakpoint-down(lg) {
       padding: 0.25rem 0.5rem;
@@ -379,7 +387,7 @@ hr {
   .card-title {
     color: $text-primary;
     font-weight: 700;
-    font-size: 1.25em;
+    font-size: 1em;
   }
 
   .card-text {
@@ -387,10 +395,26 @@ hr {
     font-weight: 400;
     font-size: 1em;
   }
+}
 
+#stakeholders {
   @include media-breakpoint-up(md) {
     img {
       width: 100%;
+    }
+  }
+}
+
+#benefits {
+  @include media-breakpoint-up(md) {
+    img {
+      width: 100%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    img {
+      width: 75%;
     }
   }
 }
@@ -405,7 +429,7 @@ hr {
 }
 
 .partner-img-wrapper {
-  width: 8em;
+  width: 6em;
   height: auto;
 
   @include media-breakpoint-up(md) {
