@@ -20734,6 +20734,9 @@ p {
   font-weight: 700;
   font-size: 2rem;
   line-height: 1.3; }
+  @media (max-width: 991.98px) {
+    .title {
+      letter-spacing: -2px; } }
   @media (min-width: 992px) {
     .title {
       font-size: 3rem; } }
