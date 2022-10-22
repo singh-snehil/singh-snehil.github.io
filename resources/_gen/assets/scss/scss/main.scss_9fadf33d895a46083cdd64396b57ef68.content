@@ -20666,13 +20666,20 @@ body {
   color: rgba(0, 0, 0, 0.6);
   background-color: #DDDDDD; }
 
-.communityLinks a {
-  color: #000;
-  border-radius: 50%;
-  padding: 1rem;
-  font-size: 2rem;
-  background-color: #DDDDDD; }
-
+.communityLinks {
+  gap: 0.5rem; }
+  .communityLinks a {
+    color: #000;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #DDDDDD;
+    cursor: pointer; }
+  @media (min-width: 768px) {
+    .communityLinks {
+      gap: 1rem; }
+      .communityLinks a {
+        font-size: 1.5rem; } }
 .btn {
   padding: 0.5rem 1rem;
   border-radius: 1.5rem;
@@ -20681,6 +20688,12 @@ body {
     .btn {
       border-radius: 1.5rem;
       padding: 0.5rem 2rem; } }
+@media (min-width: 768px) {
+  .ctaWrapper {
+    gap: 3rem; }
+  form {
+    width: 50%; } }
+
 .goal-wrapper {
   position: relative;
   width: 100%;
@@ -20692,7 +20705,7 @@ body {
   margin: 0 1rem; }
 
 #goal {
-  padding: 0 1rem; }
+  padding: 0; }
   @media (min-width: 768px) {
     #goal {
       padding: 0 2rem; }
@@ -20715,22 +20728,6 @@ p {
 #hero {
   background-color: #673AB7;
   color: #fff; }
-  #hero .btn {
-    width: 7rem;
-    font-size: 0.85rem;
-    line-height: 2; }
-    @media screen and (min-width: 374px) {
-      #hero .btn {
-        width: 9rem;
-        font-size: 1rem;
-        line-height: 1.5; } }
-    @media (max-width: 1199.98px) {
-      #hero .btn {
-        padding: 0.25rem 0.5rem;
-        border-radius: 1.25rem; } }
-    @media (min-width: 992px) {
-      #hero .btn {
-        width: 12rem; } }
   @media (min-width: 768px) {
     #hero {
       padding-top: 8rem;
@@ -20738,14 +20735,30 @@ p {
   @media (min-width: 992px) {
     #hero .btn + .btn {
       margin-left: 1.5rem; } }
+.btn {
+  width: 7rem;
+  font-size: 0.85rem;
+  line-height: 2; }
+  @media screen and (min-width: 374px) {
+    .btn {
+      width: 9rem;
+      font-size: 1rem;
+      line-height: 1.5; } }
+  @media (max-width: 1199.98px) {
+    .btn {
+      padding: 0.25rem 0.5rem;
+      border-radius: 1.25rem; } }
+  @media (min-width: 992px) {
+    .btn {
+      width: 12rem; } }
 .title {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1.3; }
   @media (max-width: 991.98px) {
     .title {
       letter-spacing: -2px; } }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .title {
       font-size: 3rem; } }
 .subtitle {

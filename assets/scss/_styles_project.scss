@@ -143,14 +143,27 @@ body {
 }
 
 .communityLinks {
+  gap: 0.5rem;
+
   a {
     color: #000;
     border-radius: 50%;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1.25rem;
     background-color: $lightgray;
+    cursor: pointer;
   }
+
+    @include media-breakpoint-up(md) {
+      gap: 1rem;
+
+      a {
+        font-size: 1.5rem;
+      }
+    }
 }
+
+
 
 
 
@@ -165,7 +178,15 @@ body {
   }
 }
 
-
+@include media-breakpoint-up(md) {
+  .ctaWrapper {
+    gap: 3rem;
+  }
+  
+  form {
+    width: 50%;
+  }
+}
 
 .goal-wrapper {
   position: relative;
@@ -179,7 +200,7 @@ body {
 }
 
 #goal {
-  padding: 0 1rem;
+  padding: 0;
 
   @include media-breakpoint-up(md) {
       padding: 0 2rem;
@@ -219,27 +240,6 @@ p {
   background-color: $primary;
   color: $secondary;
 
-  .btn {
-    width: 7rem;
-    font-size: 0.85rem;
-    line-height: 2;
-
-    @media screen and (min-width: 374px)  {
-      width: 9rem;
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-
-    @include media-breakpoint-down(lg) {
-      padding: 0.25rem 0.5rem;
-      border-radius: 1.25rem;
-    }
-
-    @include media-breakpoint-up(lg) {
-      width: 12rem;
-    }
-  }
-
   @include media-breakpoint-up(md) {
     padding-top: 8rem;
     padding-bottom: 5rem;
@@ -252,16 +252,37 @@ p {
   }
 }
 
+.btn {
+  width: 7rem;
+  font-size: 0.85rem;
+  line-height: 2;
+
+  @media screen and (min-width: 374px) {
+    width: 9rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding: 0.25rem 0.5rem;
+    border-radius: 1.25rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 12rem;
+  }
+}
+
 .title {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1.3;
 
   @include media-breakpoint-down(md) {
     letter-spacing: -2px;
   }
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     font-size: 3rem;
   }
 }

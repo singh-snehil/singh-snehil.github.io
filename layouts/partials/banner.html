@@ -1,16 +1,17 @@
-<section id="hero" class="row align-items-center">
+<section id="hero" class="row align-items-center text-center text-md-left">
     <div class="col-md-7">
-        <h1 class="title">{{if .Params.bannerTitle }}{{ .Params.bannerTitle }}{{ end }}</h1>
-        <h2 class="subtitle">{{if .Params.bannerSubtitle }}{{ .Params.bannerSubtitle }}{{ end }}</h2>
-        <div class="row justify-content-around justify-content-lg-start mt-4 px-3">
+        <h1 class="title pt-5 pt-md-0">{{if .Params.bannerTitle }}{{ .Params.bannerTitle }}{{ end }}</h1>
+        <h2 class="subtitle pt-2 pt-md-0">{{if .Params.bannerSubtitle }}{{ .Params.bannerSubtitle }}{{ end }}</h2>
+        
          {{ if .Params.cta }}
-            {{ range .Params.cta }}
-                <a class={{ if eq .type "primary" }}{{ "btn cta" }}{{ else }}{{ "btn btn-outline-secondary" }}{{ end }} href={{ .url }} target="_blank">{{ .name }}</a>
-            {{ end }}
+            <div class="ctaWrapper row justify-content-around justify-content-md-start mt-4 px-3 pt-2 pt-md-0">
+                {{ range .Params.cta }}
+                    <a class={{ if eq .type "primary" }}{{ "btn cta" }}{{ else }}{{ "btn btn-outline-secondary" }}{{ end }} href={{ .url }} target="_blank">{{ .name }}</a>
+                {{ end }}
+            </div>
          {{ end }}
-        </div>
     </div>
-    <div class="col-md-5 my-4 my-md-0">
+    <div class="col-md-5 my-5 my-md-0">
         <img src={{ .Params.bannerUrl }} alt="banner image" class="w-100" />
     </div>
 </section>

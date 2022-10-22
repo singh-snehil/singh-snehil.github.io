@@ -1,24 +1,15 @@
 +++
 title = "Governance"
-description = 'HCX Specification Governance'
+description = 'HCX Governance'
+bannerTitle = "HCX Governance"
+bannerUrl = "/images/faqs-banner.svg"
 +++
-
-{{<blocks/cover title="Specifications Governance" height="min" color="secondary">}}
-
-<div class="mx-auto mt-5">
-    
-{{<blocks/link-down color="dark" id="objective" >}}
-
-</div>
-
-{{</blocks/cover>}}
-
 
 <section id="objective" class='governance-section'>
 
 ## Objective
 
-******
+---
 
 <br />
 
@@ -28,7 +19,7 @@ Specifications are fundamental to the success of the envisioned claims network. 
 
 ## Proposed Approach and Process for Specifications at Swasth (Pilot Period)
 
-******
+---
 
 <br />
 
@@ -36,13 +27,13 @@ As evident, creating functional specifications will require a robust process and
 
 1. Enable the delivery of universal health coverage (UHC) in India
 2. Drive healthcare outcomes and inclusion as well as patient safety and privacy
-3. [Foster consensus](https://confluence.hl7.org/pages/viewpage.action?pageId=66920956#UnderstandingtheStandardsProcess-consensus)*
-4. Ensure content is [fit for purpose](https://confluence.hl7.org/pages/viewpage.action?pageId=66920956#UnderstandingtheStandardsProcess-fit)*
-5. Ensure content is [implementable](https://confluence.hl7.org/display/HL7/Understanding+the+Standards+Process#UnderstandingtheStandardsProcess-implementable)*
-6. Establish an appropriate [implementer community](https://confluence.hl7.org/display/HL7/Understanding+the+Standards+Process#UnderstandingtheStandardsProcess-community)*
-7. Ensure ongoing [maintenance of the standards](https://confluence.hl7.org/display/HL7/Understanding+the+Standards+Process#UnderstandingtheStandardsProcess-maintenance)*
+3. [Foster consensus](https://confluence.hl7.org/pages/viewpage.action?pageId=66920956#UnderstandingtheStandardsProcess-consensus)\*
+4. Ensure content is [fit for purpose](https://confluence.hl7.org/pages/viewpage.action?pageId=66920956#UnderstandingtheStandardsProcess-fit)\*
+5. Ensure content is [implementable](https://confluence.hl7.org/display/HL7/Understanding+the+Standards+Process#UnderstandingtheStandardsProcess-implementable)\*
+6. Establish an appropriate [implementer community](https://confluence.hl7.org/display/HL7/Understanding+the+Standards+Process#UnderstandingtheStandardsProcess-community)\*
+7. Ensure ongoing [maintenance of the standards](https://confluence.hl7.org/display/HL7/Understanding+the+Standards+Process#UnderstandingtheStandardsProcess-maintenance)\*
 
-(* Points 3 to 7 have been adopted from the must-have criteria followed by HL7)
+(\* Points 3 to 7 have been adopted from the must-have criteria followed by HL7)
 
 Hence, the development and maintenance of standards must follow an open and consultative process with widely inclusive, committed groups that can bring together necessary skills, viewpoints, and networks.
 
@@ -50,7 +41,7 @@ Swasth proposes to maintain and enhance specifications using an inclusive, open,
 
 1. Swasth will form a governance council for specifications with representation from across the healthcare ecosystem (insurance, TPA, patient groups, provider representatives, small provider associations, academic institutions/experts in the area, the regulator, and relevant public bodies)
 2. The governance council will facilitate the formation of topic-specific working groups
-Working groups will create clear criteria for the evaluation of a proposal
+   Working groups will create clear criteria for the evaluation of a proposal
 3. Ideas for new specifications/enhancement is proposed by one of the group members
 4. The working group evaluates the idea
 5. If approved, development/enhancement begins
@@ -67,7 +58,7 @@ Working groups will create clear criteria for the evaluation of a proposal
 
 ## Proposed Approach and Process for Specifications at iSPIRT
 
-******
+---
 
 <br />
 
