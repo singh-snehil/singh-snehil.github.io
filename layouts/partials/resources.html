@@ -1,0 +1,21 @@
+<section id="resources" class="row text-center text-lg-left">
+    <div class="col">
+        <h3 class="section-head text-center">Resources</h3>
+        <div class="card-group justify-content-between pt-2 pt-lg-0">
+            {{ if .Site.Data.resources.resources }}
+
+            {{ range first 3 .Site.Data.resources.resources }}
+                {{ $desc := substr .desc 0 100 }}
+                {{ $text := printf "%s" "..." | printf "%s%s" $desc }}
+                <div class="card flex-md-row shadow-sm p-3 py-md-1 my-2">
+                    <div class="card-body px-2 px-md-0">
+                        <h3 class="card-title">{{ .name }}</h3>
+                        <p class="card-text">{{ $text }}</p>
+                        <a href="{{ .url }}" class="card-title"><strong>Read More</strong></a>
+                    </div>
+                </div>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
