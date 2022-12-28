@@ -21,34 +21,34 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 [menu]
     [[menu.main]]
         name = "Home"
-        weight = -102
+        weight = 1
         pre = "<i class='fas fa-home pr-2'></i>"
         url = "/"
     [[menu.main]]
-        name = "Governance"
-        weight = -101
-        pre = "<i class='fas fa-landmark pr-2'></i>"
-        url = "/governance/"
-    [[menu.main]]
-        name = "Blog"
-        weight = -100
-        pre = "<i class='fas fa-rss pr-2'></i>"
-        url = "/blog"
-    [[menu.main]]
         name = "Community"
-        weight = -99
+        weight = 2
         pre = "<i class='fas fa-users pr-2'></i>"
         url = "/community"
     [[menu.main]]
         name = "Resources"
-        weight = -98
+        weight = 3
         pre = "<i class='fas fa-toolbox pr-2'></i>"
         url = "/resources"
     [[menu.main]]
+        name = "Governance"
+        weight = 4
+        pre = "<i class='fas fa-landmark pr-2'></i>"
+        url = "/governance"
+    [[menu.main]]
         name = "FAQs"
-        weight = -97
+        weight = 5
         pre = "<i class='fas fa-question-circle pr-2'></i>"
         url = "/faq"
+    [[menu.main]]
+        name = "Blog"
+        weight = 6
+        pre = "<i class='fas fa-rss pr-2'></i>"
+        url = "/blog"
 
 ###############################################################################
 # Docsy - Goldmark markdown parser

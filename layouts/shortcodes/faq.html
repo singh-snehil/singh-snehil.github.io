@@ -1,20 +1,20 @@
 <section id='faq' class="pt-5">
     <div class="accordion pt-4" id="faqAccordion">
-      {{ range .Site.Data.faq.faqs }}
-      <div class="card rounded">
-        <div class="card-header" id="faq{{ .id }}">
-          <h2 class="mb-0">
-            <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#answer{{ .id }}" aria-expanded="false" aria-controls="answer{{ .id }}">
-              {{ .ques }}
-            </button>
-          </h2>
+      {{ range .Site.Data.faqs }}
+        <div class="card rounded">
+          <div class="card-header" id="faq{{ .id }}">
+            <h2 class="mb-0">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#answer{{ .id }}" aria-expanded="false" aria-controls="answer{{ .id }}">
+                {{ .ques }}
+              </button>
+            </h2>
+          </div>
+          <div id="answer{{ .id }}" class="collapse" aria-labelledby="heading{{ .id }}" data-parent="#faqAccordion">
+              <div class="card-body">
+                  {{ .ans }}
+              </div>
+          </div>
         </div>
-        <div id="answer{{ .id }}" class="collapse" aria-labelledby="heading{{ .id }}" data-parent="#faqAccordion">
-            <div class="card-body">
-                {{ .ans }}
-            </div>
-        </div>
-      </div>
       {{ end }}
     </div>
   </section>

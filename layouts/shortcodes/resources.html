@@ -1,10 +1,10 @@
 <section id="resources" class="row text-center text-lg-left">
     <div class="col">
         <h3 class="section-head text-center">Resources</h3>
-        <div class="card-group justify-content-between pt-2 pt-lg-0">
-            {{ if .Site.Data.resources.resources }}
+        <div class="card-group justify-content-center pt-2 pt-lg-0">
+            {{ if .Site.Data.resources }}
 
-            {{ range first 3 .Site.Data.resources.resources }}
+            {{ range .Site.Data.resources }}
                 {{ $desc := substr .desc 0 100 }}
                 {{ $text := printf "%s" "..." | printf "%s%s" $desc }}
                 <div class="card flex-md-row shadow-sm p-3 py-md-1 my-2">

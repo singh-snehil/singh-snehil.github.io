@@ -2,28 +2,58 @@
 <section id="volunteers" class="row">
     <div class="col">
       <h3 class="section-head">Volunteers</h3>
-      <div class="mb-4">
-          {{ if .Params.currentPhase }}
-            {{ range first 1 $sortedByPhase }}
-              {{ partial "volunteer-tile.html" . }}
+      <div class="nav nav-pills justify-content-center my-4">
+        {{ range $sortedByPhase }}
+          <button class="nav-link" onclick="openPhase(event, {{ .phase }} )">Phase {{ .phase }}</button>
+        {{ end }}
+      </div>
+      {{ range $sortedByPhase }}
+        <div id={{ .phase }} class="tabcontent">
+          <div class="wrapper d-flex flex-wrap justify-content-between justify-content-lg-start">
+            {{ range .volunteers }}
+              <div class="volunteer py-md-2 d-flex align-items-center position-relative">
+                <span class="volunteer-badge flex-shrink-0" style="background: #673AB7 url('{{ .imageUrl }}') no-repeat center; background-size: cover;" data-name="{{ .name }}" data-image="{{ .imageUrl }}"></span>
+                <div class="d-flex flex-column pl-2 py-2">
+                  <a href="{{ .linkedinUrl }}" target="_blank"  class="volunteer-title flex-grow-1 stretched-link">{{ .name }}</a>
+                  <span class="org">{{ .org }}</span>
+                </div>
+              </div>
             {{ end }}
-          {{ else }}
-            {{ range $sortedByPhase }}
-              {{ partial "volunteer-tile.html" . }}
-            {{ end }}
-          {{ end }}
+          </div>
         </div>
+      {{ end }}
     </div>
 </section>
 
 <script>
+  document.querySelector('.nav').firstElementChild.click();
+
+  function openPhase(evt, phase) {
+  // Declare all variables
+  var i, tabcontent, navLinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  navLinks = document.getElementsByClassName("nav-link");
+  for (i = 0; i < navLinks.length; i++) {
+    navLinks[i].className = navLinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(phase).style.display = "block";
+  evt.currentTarget.className += " active";
+
   let badges = document.querySelectorAll('.volunteer-badge');
 
-badges?.forEach(badge => {
-  if(badge.dataset?.image.length === 0) {
-      let initials = badge.dataset.name?.split(' ')?.map(str => {if(str !== 'Dr.') {return str[0]}})
-      .join('');
-      badge.textContent = initials;
-  }
-});
+  badges?.forEach(badge => {
+    if(badge.dataset?.image.length === 0) {
+        let initials = badge.dataset.name?.split(' ')?.map(str => {if(str !== 'Dr.') {return str[0]}})
+        .join('');
+        badge.textContent = initials;
+    }
+  });
+}
 </script>

@@ -20584,6 +20584,11 @@ body:lang(ar) {
 footer {
   min-height: auto; }
 
+#contactus {
+  width: 100%; }
+  @media (min-width: 576px) {
+    #contactus {
+      width: 60%; } }
 a {
   color: unset;
   text-decoration: none;
@@ -20954,12 +20959,13 @@ hr {
 .volunteer-badge {
   width: 2.25rem;
   height: 2.25rem;
-  color: #673AB7;
+  color: white;
+  background-color: #673AB7;
   display: inline-block;
   padding: 0.25em 0.25em;
   font-size: 150%;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.5;
   text-align: center;
   border-radius: 50%;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
@@ -20967,9 +20973,6 @@ hr {
     .volunteer-badge {
       width: 3rem;
       height: 2.5rem;
-      line-height: 1; } }
-  @media (min-width: 992px) {
-    .volunteer-badge {
       line-height: 1.25; } }
 .volunteer-title {
   border: none;
@@ -21047,5 +21050,36 @@ hr {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2; }
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1; }
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s; }
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd; }
+
+/* Create an active/current tablink class */
+.nav-pills .nav-link {
+  border: 1px solid #673AB7;
+  font-weight: 600;
+  background-color: white; }
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none; }
 
 /*# sourceMappingURL=main.css.map */
